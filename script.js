@@ -50,14 +50,23 @@ Highcharts.chart('container', {
     series: [{
         name: 'Chicago',
         data: chicago_temp,
-        type: 'arearange'
+        type: 'arearange',
+            lineWidth: 0,
+            color: Highcharts.getOptions().colors[7],
+            fillOpacity: 0.5,
     },{
         name: 'Cincinnati',
         data: cincinnati_temp,
-        type: 'arearange'
+        type: 'arearange',
+            lineWidth: 0,
+            color: Highcharts.getOptions().colors[5],
+            fillOpacity: 0.5,
     },{
         name: 'Nashville',
         data: nashville_temp,
-        type: 'arearange'
+        type: 'arearange',
+            lineWidth: 0,
+            color: Highcharts.getOptions().colors[4],
+            fillOpacity: 0.5,
     }]
 });
