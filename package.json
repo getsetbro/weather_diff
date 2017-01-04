@@ -1,0 +1,20 @@
+{
+  "name": "weather_diff",
+  "version": "1.0.0",
+  "description": "weather diff city vs city",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/getsetbro/weather_diff.git"
+  },
+  "author": "getsetbro",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/getsetbro/weather_diff/issues"
+  },
+  "homepage": "https://github.com/getsetbro/weather_diff#readme",
+  "dependencies": {}
+}
