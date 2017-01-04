@@ -5,7 +5,7 @@ var nashvil = [0, 3,6, 4, 1,0];
 
 var hcObj = {
 
-title: {align: "left", text: ''},
+title: {align: "left", text: 'Snow'},
 xAxis: {
 categories: ['Nov','Dec','Jan','Feb','Mar','Apr']
 },
