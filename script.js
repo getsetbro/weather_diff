@@ -41,32 +41,40 @@ var nashville_temp = [
     [38,61],
     [31,51]
 ];
+Highcharts.setOptions({
+    colors: ['#c42525', '#77a1e5', '#a6c96a']
+});
 Highcharts.chart('container', {
 
-    title: {text: 'Monthly Average Temperature'},
-    xAxis: {categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']},
-    yAxis: {title: {text: 'Temperature (°F)'}},
-
+    title: {text: ''},
+    xAxis: {
+        categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
+        ,gridLineWidth: 1
+        ,crosshair: {width:1,color:'#000'}
+    },
+    yAxis: {
+        title: {text: ''},
+        labels: {
+        format: '{value} °F'
+        }
+    },
+    legend: {
+        verticalAlign: "top"
+    },
     series: [{
         name: 'Chicago',
         data: chicago_temp,
         type: 'arearange',
-            lineWidth: 0,
-            color: Highcharts.getOptions().colors[7],
-            fillOpacity: 0.5,
+        fillOpacity: 0.5,
     },{
         name: 'Cincinnati',
         data: cincinnati_temp,
         type: 'arearange',
-            lineWidth: 0,
-            color: Highcharts.getOptions().colors[5],
-            fillOpacity: 0.5,
+        fillOpacity: 0.7,
     },{
         name: 'Nashville',
         data: nashville_temp,
         type: 'arearange',
-            lineWidth: 0,
-            color: Highcharts.getOptions().colors[4],
-            fillOpacity: 0.5,
+        fillOpacity: 0.3,
     }]
 });

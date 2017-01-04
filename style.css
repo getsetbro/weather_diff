@@ -25,26 +25,13 @@ body {
   line-height: 1.5;
   color: #373a3c;
   background-color: #fff;
-  display: flex;
-  flex-direction: column;
   margin:0;
 }
 
-header{
-	background-color: #eee;
-	padding: 1em;
-}
-main {
-  flex: 1 0 auto;
-  padding: 2em;
-}
-footer{
-background-color: #eee;
-padding: 2em;
-}
 
 .chart{
   min-width: 310px;
-  height: 600px;
+  min-height: 310px;
+  height: calc(100vh - 50px);
   margin: 0 auto;
 }
