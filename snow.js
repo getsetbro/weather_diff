@@ -1,13 +1,13 @@
 
-var chicago = [21,16,9,1,0,5,17];
-var cincinn = [14,10,5,0,0,2,10];
-var nashvil = [6, 4, 1,0,0,0, 3];
+var chicago = [5,17,21,16,9,1];
+var cincinn = [2,10,14,10,5,0];
+var nashvil = [0, 3,6, 4, 1,0];
 
 var hcObj = {
 
 title: {align: "left", text: ''},
 xAxis: {
-categories: ['Jan','Feb','Mar','Apr','N/A','Nov','Dec']
+categories: ['Nov','Dec','Jan','Feb','Mar','Apr']
 },
 yAxis: {
     labels: {format: '{value} days'},
